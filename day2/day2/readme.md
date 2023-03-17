@@ -1,0 +1,1 @@
+in this i ahve use funsctoin and i also use operaters
