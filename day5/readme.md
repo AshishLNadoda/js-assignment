@@ -1,0 +1,1 @@
+in this assignment we use string opertion in  Js by own exmaple
