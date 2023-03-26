@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .sq{ 
+        width: 100vw;
+        height: 100vh;
+      border-color: 2cm solid black;
+      display:block;
+    }
+#in{
+    margin: auto;
+  width: 50%;
+  height: 20vh;
+  border: 3px solid green;
+  padding: 10px;
+  display: flex;
+  font-size: 10vh;
+}
+#wrote{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  height: 20vh;
+  font-size: 10vh;
+}
+</style>
+
+<body>
+
+    <div class="sq">
+        <input  oninput=fname(this) type="text" id="in"/>
+        <p id="wrote" ></p>
+    </div>
+    <script>
+
+        function fname(name){
+            document.getElementById("wrote").innerHTML=name.value;
+        
+        }
+        
+        </script>
+   
+ 
+</body>
+</html>
