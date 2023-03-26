@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      
+  
+      .slideshow-container {
+         width: 1000px;
+         position: relative;
+         margin: auto;
+      }
+      
+      .prev{
+         cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 30px 20px 0;
+  border-color: transparent #060606 transparent transparent;
+  left: 0;
+  margin-left: 20px;
+      }
+      .next {
+         cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+         border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #000000;
+  right: 0;
+  margin-right: 20px;
+      }
+   </style>
+</head>
+<body>
+   <div class="slideshow-container">
+      <div class="mySlides fade">
+        
+         <img src="a.png" style="width:100%">
+       
+         </div>
+         <div class="mySlides fade">
+           
+            <img src="b.png" style="width:100%;">
+           
+         </div>
+         <div class="mySlides fade">
+         
+            <img src="a.png" style="width:100%">
+           
+         </div>
+         <a class="prev" onclick="plusSlides(-1)"></a>
+         <a class="next" onclick="plusSlides(1)"></a>
+   </div>
+   <br>
+   
+   <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+         showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+         showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+     
+         if (n > slides.length) {slideIndex = 1}
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+         }
+         
+         slides[slideIndex-1].style.display = "block";
+       
+      }
+   </script>
+</body>
+</html>
