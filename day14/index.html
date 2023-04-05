@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript form validation - Password Checking - 4</title>
+<style>
+    body{
+        background: black
+    }
+    li {list-style-type: none;
+font-size: 16pt;
+}
+h2{
+    font-size: 25pt;
+    font-style: italic;
+    color: rgb(73, 7, 7);
+    
+}
+.mail {
+margin: auto;
+margin-top: 220px;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 800px;
+background : #0a647d;
+border-radius: 8%;
+box-sizing: border-box;
+border: 10px solid rgb(145, 140, 140);
+}
+
+
+input {
+font-size: 20pt;
+}
+
+input submit {
+font-size: 12pt;
+}
+
+</style>
+</head>
+<body >
+<div class="mail">
+<form name="form1" action="#">
+<ul>
+<h2>Enter the Password</h2>
+<li><input type='text' name='text1'/></li>
+&nbsp;
+<li><input type="submit" name="submit" value="Submit" onclick="CheckPassword(document.form1.text1)" /></li>
+<li>&nbsp;</li>
+<li>At least 8 characters long</li>
+    <li>Contains at least one uppercase letter</li>
+    <li>at least one lowercase letter</li> 
+    <li>Contains at least one number</li>
+    <li>Contains at least one special character (e.g. @, !, #, $, %, ^, &, *, (, ), -, +)</li>
+</ul>
+</form>
+</div>
+<script >function CheckPassword(inputtxt) 
+    { 
+    var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+    if(inputtxt.value.match(decimal)) 
+    { 
+    alert('Correct! Sahi jawab')
+    return true;
+    }
+    else
+    { 
+    alert('Wrong...! Firse try kare')
+    return false;
+    }
+    } 
+     </script>
+</body>
+</html>
