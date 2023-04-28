@@ -1,0 +1,313 @@
+
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+ 
+    
+  
+  .main{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(165deg, black, rgb(82, 43, 43));
+  }
+  #container{
+    width: 100%;
+    height: 20%;
+  }
+  .mid-container{
+    text-align: center;
+  width: 100%;
+  height: 80%;
+  }
+  #des
+  {
+    font-size:20px;
+    color:white;
+  }
+  #list
+  {
+    list-style:none;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+     cursor:pointer;
+     margin:auto;
+    font-size:22px;
+     
+    color:rgb(13, 102, 150);
+    border-radius:5px;
+    padding:10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:50px;
+  }
+  li 
+  {
+    margin-right:15px;
+     cursor:pointer;
+    margin-top:10px;
+    padding:20px;
+  }
+  
+  
+  #subItems
+  {
+    list-style:none;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-direction: column;
+    background:#036d6c;
+    background-color: #000000;
+    color:white;
+    height:100vh;
+    width:20%;
+  }
+  
+  #subItems li
+  {
+   margin-top:80px;
+    padding:10px;
+    cursor:pointer;
+    font-size:25px;
+  
+    
+  }
+  
+  #subItems li:hover
+  {
+    background-color:red;
+    color:white;
+    border-radius:5px;
+      
+  }
+  #Details
+  {
+    display:flex;
+    justify-content:flex-start;
+  }
+  #ele_page
+  {
+    width:70%;
+    height:100%;
+    margin:auto;
+     background-color: #000000;
+  }
+  
+  #Items_electronics
+  {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  #Items_electronics img
+  {
+    width:400px;
+    height:300px;
+  }
+  
+  #text
+  {
+    text-align:center;
+    height:100%;
+  color:white;
+  margin-top:20px;
+  }
+  h1{
+    text-align:center;
+    text-transform: uppercase;
+    margin-top:20px;
+    color:white;
+  }
+  
+  #text
+  { 
+    word-spacing:3px;
+    letter-spacing:2px;
+    font-size:20px;
+  }
+  h3
+  {
+    padding-right:450px;
+  }
+  
+  p
+  {
+    margin-top:20px;
+    margin-bottom:45px;
+    font-size:15px;
+    font-weight:600;
+  }
+  
+  #price
+  {
+    font-size:30px;
+  }
+  
+ 
+  
+  .mid-container
+  {
+    padding-top:100px;
+    height:80%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    
+    
+  }
+  
+  #knowmore
+  {
+    text-align:center;
+    color: rgb(38, 13, 223);
+    margin:auto;
+    border:2px solid rgb(19, 13, 214);
+    cursor:pointer;
+    padding:10px;
+    border-radius:10px;
+    font-size:15px;
+  }
+  
+  #jewellery
+  {
+    width:100px;
+  }
+  
+  #Jewellerypage
+  {
+    width:70%;
+    height:100%;
+    margin:auto;
+    background-color: #000000;
+  }
+  
+  #womanswear
+  {
+     width:70%;
+    height:100%;
+    margin:auto;
+    background-color: #000000;
+  }
+  
+  #menswear
+  {
+     width:70%;
+    height:100%;
+    margin:auto;
+    background-color: #000000;
+  }
+  
+  .container{
+    color: white;
+  }
+  
+  .list-group,li
+  {
+    list-style:none;
+  }
+  .list-group{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+  }
+  
+ 
+  .container img
+  {
+    border-radius:50%;
+  }
+  .container
+  {
+    margin: 20%;
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    background-color:rgb(22, 21, 21);
+    color:rgb(237, 231, 231);
+    padding-top:50px;
+    padding-bottom:50px;
+    
+  }
+  
+  @media(max-width:768px)
+  {
+  .card
+  {
+    width:100%
+  }
+  
+    #subItems
+    {
+      width:500px;
+      padding-right: 200px;
+      margin-left:100px;
+      margin-top:200px;
+    }
+    #ele_page
+    {
+      width:500px;
+      margin-right:300px;
+    }
+    #text 
+    {
+     width:500px;
+     
+    }
+    .category
+    {
+      padding:50px;
+      font-size:50px;
+    }
+    #Items_electronics
+    {
+      margin-right:200px;
+    }
+     #Items_electronics img 
+    {
+      width:300px;
+      margin-right:50px;
+    }
+    .category
+    {
+      text-align:center;
+      width:500px;
+    }
+    .mid-container
+    {
+     width:500px;
+      margin-top:200px;
+      font-size:10px;
+    }
+    #des
+    {
+      font-size:10px;
+    }
+    #ele_page
+    {
+      margin-top:200px;
+    }
+    #Jewellerypage
+    {
+      margin-top:200px;
+    }
+    #menswear
+    {
+      margin-top:200px;
+    }
+    #womanswear
+    {
+       margin-top:200px;
+    }
+    .container
+    {
+      width:700px;
+    }
+  }
