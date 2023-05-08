@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page </title>
+  <style>
+    body{
+  background: #f0f0f0 !important;
+  font-family: 'Muli', sans-serif;
+  
+}
+.main{
+background: #021e41;
+  width: 100%;
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c1{
+
+  transform:
+    perspective(75em)
+    rotateX(0deg);
+  box-shadow:
+    rgba(213, 220, 225, 0.42) 0px 60px 123px -25px,
+    rgba(165, 172, 178, 0.08) 0px 35px 75px -35px;
+
+  border: 1px solid;
+  border-color:
+    rgb(213, 220, 226)
+    rgb(213, 220, 226)
+    rgb(184, 194, 204);
+border-radius: 15px;
+  width: 50vw;
+  height: 60vh;
+  display: inline-flex;
+}
+
+.cc1{ width: 40%;
+  height: 100%;
+
+  border-radius: 15px 0px 0px 15px;
+
+}
+.cc2{ width: 60%;
+  height: 100%;
+  background-color:#0f2540;
+  border-radius: 0px 15px 15px 0px;
+
+}
+.cc1 img{
+  border-radius:15px 0px 0px 15px;
+}
+.ccc{
+  width: 80%;
+  height: 85%;
+  margin-top: 35px;
+  margin-left: 39px;
+  border-radius: 10px;
+}
+.ccc1{
+  width: 100%;
+  height: 20%;
+}
+.ccc2{
+  width: 100%;
+  height: 70%;
+ 
+}
+.ccc3{
+  width: 100%;
+  height: 10%;
+ color: #ece8e8;
+  text-align: center;
+}
+.ccc1 span{
+  color: #ece8e8;
+  font-size: xx-large;
+  font-weight: bold;
+}
+.ccc2 span{
+  color: #ece8e8;
+  font-size: 2ch;
+  font-weight: lighter;
+}
+.ccc1 p{
+ margin: 5px;
+ font-size: smaller;
+ color: #ece8e8;
+}
+.fr{
+  width: 100%;
+  height: 15%;
+  background-color:#0f2540;
+  border: solid #972020;
+  border-radius: 5px;
+}
+.forget{
+text-align: right;
+font-size: smaller;
+color: #ece8e8;
+margin: 3px;
+}
+.si{
+  width: 100%;
+  height: 20%;
+  background-color: #d51d1d;
+  font-size: xx-large;
+  border-radius:15px;
+}
+.ccc3 a{color: #d51d1d;
+  
+}
+.ccc3 a:hover{
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+  <div class="main">
+    <div class="c1">
+     <div class="cc1">
+      <img src="MV5BMTUwNjUxMTM4NV5BMl5BanBnXkFtZTgwODExMDQzMTI@._V1_.jpg" alt="Girl in a jacket" width="100%" height="100%">
+     </div>
+     <div class="cc2">
+      <div class="ccc">
+        <div class="ccc1">
+          <span>Welcome back,</span> 
+          <p>sign in to your account</p>
+        </div>
+        <div class="ccc2">
+          <span>E-mail</span><br>
+          <input type="text" id="email" class="fr" name="fname" placeholder="Enter E-mail">
+          <br><br>
+          <span>Passward</span>
+          <br>
+          <input type="text" id="pass" class="fr" name="fname" placeholder="Enter Passward">
+          <h3 class="forget">Forget Passward?</h3>
+          <br>
+          
+          <button type="button" onclick="login()" class="si">Sign in</button>
+        </div>
+        <div class="ccc3">
+          <span> Don't have an account?</span>&nbsp;<a href="signup.html">Sign up</a>
+        </div>
+      </div>
+     </div>
+    </div>
+  </div>
+  
+<script>
+  function login(){
+    var email=document.getElementById("email").value;
+    var pass=document.getElementById("pass").value;
+     
+    var user1=localStorage.getItem("user1");
+    var pass1=localStorage.getItem("pass1");
+    if(email==user1 && pass==pass1){
+      window.location.href="movie.html";}
+      else{
+        alert("GALAT USER YA PASSWERD")
+        
+      }
+    }
+</script>
+
+</body>
+</html>

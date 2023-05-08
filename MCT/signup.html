@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+         body{
+  background: #f0f0f0 !important;
+  font-family: 'Muli', sans-serif;
+  
+}
+.main{
+background: #021e41;
+  width: 100%;
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-contener{
+
+  transform:
+    perspective(75em)
+    rotateX(0deg);
+  box-shadow:
+    rgba(213, 220, 225, 0.42) 0px 60px 123px -25px,
+    rgba(165, 172, 178, 0.08) 0px 35px 75px -35px;
+
+  border: 1px solid;
+  border-color:
+    rgb(213, 220, 226)
+    rgb(213, 220, 226)
+    rgb(184, 194, 204);
+border-radius: 15px;
+  width: 50vw;
+  height: 60vh;
+ 
+}
+.signup-contener h1{
+ text-align: center;
+ color: azure;
+}
+.signup-contener span{
+   margin: 10px;
+    color: #ece8e8;
+  font-size: 2ch;
+  font-weight: lighter;
+}
+.signup-contener input{
+    margin: 10px;
+    width: 80%;
+  height: 5%;
+  background-color:#0f2540;
+  border: solid #972020;
+  border-radius: 5px;
+}
+.submit {
+  width: 80%;
+  height: 8%;
+  background-color: #611010;
+ font-size: 3ch;
+  border-radius:15px;
+  margin-left: 15px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="signup-contener">
+        <h1>SIGNUP PAGE</h1>
+        <br>
+        <span>Enter Name:</span>
+        <br>
+        <input type="text" class="fr" name="fname" id="name" placeholder="Enter Name">
+        <br>
+        <span>Enter age</span>
+        <br>
+        <input type="text" class="fr" name="fname" id="age" placeholder="Enter age">
+        <br>
+        <span>Enter UserName:</span>
+        <br>
+        <input type="text" class="fr" name="fname" id="user" placeholder="Enter Username">
+        <br>
+        <span>Enter Passward:</span>
+        <br>
+        <input type="text" class="fr" name="fname" id="pass" placeholder="Enter Passward">
+        <br><br>
+        <button type="button" onclick="signup()" class="submit">Sign Up</button>
+        
+        
+        </div>
+    </div>
+   <script>
+    function signup(){
+        var name=document.getElementById("name").value;
+        var age=document.getElementById("age").value;
+        var UserName=document.getElementById("user").value;
+        var pass=document.getElementById("pass").value;
+
+        localStorage.setItem("name1",name)
+        localStorage.setItem("age1",age)
+        localStorage.setItem("user1",UserName)
+        localStorage.setItem("pass1",pass)
+        window.location.href="login.html"
+
+    }
+
+   </script>
+</body>
+</html>
